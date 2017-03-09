@@ -9,6 +9,7 @@ using System.Threading;
 using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Assignment03
 {
@@ -20,6 +21,8 @@ namespace Assignment03
         public Thread uthread;
         public static int fps = 60;
         public static double running_fps = 60.0;
+        public static SoundPlayer jukebox = new SoundPlayer(Properties.Resources.music);
+        public static SoundPlayer phwoah = new SoundPlayer(Properties.Resources.phwoah);
 
         public Engine()
         {

@@ -83,6 +83,12 @@
   <ItemGroup>
     <None Include="Resources\elephant.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="phwoahmelinda.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
