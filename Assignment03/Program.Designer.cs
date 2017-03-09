@@ -1,6 +1,6 @@
 ﻿namespace Assignment03
 {
-    partial class Form1
+    partial class Engine
     {
         /// <summary>
         /// Required designer variable.
