@@ -20,8 +20,8 @@ namespace Assignment03
             if (e.KeyCode == Keys.Down && parent.children.Count > 0) elephant.TargetY += 30;
             if (e.KeyCode == Keys.A && parent.children.Count == 0) parent.add(elephant);
             if (e.KeyCode == Keys.D && parent.children.Count > 0) parent.children[0].Kill();
-            if (e.ToString().Equals("=") && parent.children.Count > 0) elephant.Velocity+=5;
-            if (e.KeyCode == Keys.Subtract && parent.children.Count > 0) elephant.Velocity-=5;
+            if (e.KeyCode == Keys.Oemplus && parent.children.Count > 0) elephant.Velocity+=5;
+            if (e.KeyCode == Keys.OemMinus && parent.children.Count > 0 && elephant.Velocity>4) elephant.Velocity-=5;
             if (e.KeyCode == Keys.R && parent.children.Count > 0)
             {
                 elephant.TargetX = 0;
@@ -30,6 +30,7 @@ namespace Assignment03
             if (e.KeyCode == Keys.P) jukebox.PlayLooping();
             if (e.KeyCode == Keys.M) jukebox.Stop();
             if (e.KeyCode == Keys.T && parent.children.Count > 0) phwoah.Play();
+            if (e.KeyCode == Keys.D0 && parent.children.Count > 0) elephant.Velocity = 0;
         }
 
         /// <summary>
@@ -42,6 +43,8 @@ namespace Assignment03
             elephant.TargetX = 100;
             elephant.TargetY = 100;
             elephant.Velocity = 5;
+            parent = new Sprite();
+            parent.add(elephant);
             Application.Run(new Program());
         }
     }

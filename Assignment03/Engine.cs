@@ -28,7 +28,7 @@ namespace Assignment03
         {
             DoubleBuffered = true;
             InitializeComponent();
-            parent = new Sprite();
+            //parent = new Sprite();
             form = this;
             rthread = new Thread(new ThreadStart(render));
             uthread = new Thread(new ThreadStart(update));
